@@ -7,35 +7,43 @@
 	<body>
 		<nav>
 			<ul>
-				<li><a href="index.html">Conference Dates</a></li>
-				<li><a href="deadlines.html">Submission Deadlines</a></li>
-				<li><a href="coverage.html">Date Coverage</a></li>
+				<li><a href="index.html" target="_blank" rel="noopener noreferrer">Conference Dates</a></li>
+				<li><a href="deadlines.html" target="_blank" rel="noopener noreferrer">Submission Deadlines</a></li>
+				<li><a href="coverage.html" target="_blank" rel="noopener noreferrer">Date Coverage</a></li>
 			</ul>
 		</nav>
 
 		<main>
 		<h1>{{ title }}</h1>
+
+		{% macro coverage_table(rows, include_deadline=False) %}
 		<table>
 			<thead>
 			<tr>
 				<th>Conference</th>
 				<th>Abbreviation</th>
+				{% if include_deadline %}
+				<th>Next Deadline</th>
+				{% endif %}
 				{% for year in coverage_years %}
 				<th>{{ year }}</th>
 				{% endfor %}
 			</tr>
 			</thead>
 			<tbody>
-			{% for row in coverage_rows | sort(attribute='abbreviation') %}
+			{% for row in rows %}
 			<tr>
 				<td>
 					{% if row.url %}
-					<a href="{{ row.url }}">{{ row.name }}</a>
+					<a href="{{ row.url }}" target="_blank" rel="noopener noreferrer">{{ row.name }}</a>
 					{% else %}
 					{{ row.name }}
 					{% endif %}
 				</td>
 				<td>{{ row.abbreviation }}</td>
+				{% if include_deadline %}
+				<td>{{ row.next_deadline }}</td>
+				{% endif %}
 				{% for year in coverage_years %}
 				{% if row.coverage[year] %}
 				<td class="coverage-updated">Updated</td>
@@ -47,6 +55,24 @@
 			{% endfor %}
 			</tbody>
 		</table>
+		{% endmacro %}
+
+		<section>
+			<h1>Future Submission Deadlines</h1>
+			{{ coverage_table(future_deadline_rows | sort(attribute='next_deadline'), include_deadline=True) }}
+		</section>
+
+		<section>
+			<h1>Other Conferences</h1>
+			{{ coverage_table(other_coverage_rows | sort(attribute='abbreviation')) }}
+		</section>
+
+		<section>
+			<h1>Useful Links</h1>
+			<ul>
+				<li><a href="https://dl.acm.org/sig/sigmm/upcoming" target="_blank" rel="noopener noreferrer">ACM SIGMM Upcoming Events</a></li>
+			</ul>
+		</section>
 
 		<section>
 			<p>Latest update: {{ timestamp }} </p>

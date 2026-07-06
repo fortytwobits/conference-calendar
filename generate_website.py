@@ -54,17 +54,22 @@ def create_conference_table(conf_list: Iterable, year: int=date.today().year):
             deadline_data[deadline_week].append(conference)
     return week_data, deadline_data
 
-def create_coverage_rows(conf_list: Iterable, years: Iterable[int]):
+def create_coverage_rows(conf_list: Iterable, years: Iterable[int],
+                         today: date=date.today()):
     coverage_rows = []
     for conference in conf_list:
         conference_years = set()
         for _start_date, _end_date in conference.get("dates", []) or []:
             conference_years.add(_start_date.year)
+        deadlines = conference.get("deadline", []) or []
+        future_deadlines = [deadline for deadline in deadlines if deadline >= today]
         coverage_rows.append({
             "name": conference.get("name", ""),
             "abbreviation": conference.get("abbreviation", ""),
             "url": conference.get("url", ""),
             "coverage": {year: year in conference_years for year in years},
+            "has_future_deadline": bool(future_deadlines),
+            "next_deadline": min(future_deadlines) if future_deadlines else "",
         })
     return coverage_rows
 
@@ -141,9 +146,17 @@ def main():
         with open(out_path, 'w') as html_file:
             html_file.write(content)
 
-    coverage_years = list(range(2025, 2029))
-    coverage_rows = create_coverage_rows(data, coverage_years)
+    coverage_years = list(range(2025, 2028))
+    coverage_rows = create_coverage_rows(data, coverage_years, today)
+    future_deadline_rows = [
+        row for row in coverage_rows if row["has_future_deadline"]
+    ]
+    other_coverage_rows = [
+        row for row in coverage_rows if not row["has_future_deadline"]
+    ]
     content = coverage_template.render(coverage_rows=coverage_rows,
+                                       future_deadline_rows=future_deadline_rows,
+                                       other_coverage_rows=other_coverage_rows,
                                        coverage_years=coverage_years,
                                        title="Date Coverage",
                                        timestamp=timestamp)
