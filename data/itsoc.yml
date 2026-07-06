@@ -16,14 +16,10 @@
     Furthermore, it provides an open forum to discuss and exchange with other
     researchers on any of these topics.
   dates: !!seq
-    - [2023-06-25, 2023-06-30]
-    - [2024-07-07, 2024-07-12]
     - [2025-06-22, 2025-06-27]
     - [2026-06-28, 2026-07-03]
     - [2027-06-27, 2027-07-02]
   deadline:
-    - 2023-02-05
-    - 2024-01-29
     - 2025-01-22
     - 2026-01-16
 
@@ -40,14 +36,10 @@
     changes from year to year, and there may be several editions of the
     workshop within a calendar year.
   dates: !!seq
-    - [2023-04-23, 2023-04-28]
-    - [2024-11-24, 2024-11-28]
     - [2025-09-29, 2025-10-03]
     - [2026-11-10, 2026-11-13]
     - [2027-04-05, 2027-04-08]
   deadline:
-    - 2022-12-18
-    - 2024-05-07
     - 2025-04-21
     - 2026-05-10
     - 2026-10-02
@@ -62,53 +54,6 @@
     research results and developments in multiple areas of Information Sciences
     and Systems.
   dates: !!seq
-    - [2023-03-22, 2023-03-24]
-    - [2024-03-13, 2024-03-15]
     - [2025-03-19, 2025-03-21]
     - [2027-03-24, 2027-03-26]
-  deadline:
-    - 2022-12-20
-    - 2023-12-01
-    - 2024-12-14
-
-- name: "International Symposium on Modeling and Optimization in Mobile, Ad hoc, and Wireless Networks"
-  abbreviation: "WiOpt"
-  url: "https://wiopt2026.github.io/"
-  topic: "Information Theory"
-  type: "workshop"
-  description: >
-    It welcomes original and high-quality submissions related to modeling,
-    performance evaluation, and optimization of networks. The focus includes
-    but is not limited to mobile networks, edge computing, intelligent
-    networks, content-driven networks, cognitive networks, vehicular networks,
-    robotic systems, Internet.
-  dates: !!seq
-    - [2023-08-24, 2023-08-27]
-    - [2024-10-21, 2024-10-24]
-    - [2025-05-26, 2025-05-29]
-    - [2026-06-03, 2026-06-06]
-  deadline:
-    - 2023-04-24
-    - 2024-07-13
-    - 2025-02-09
-    - 2026-02-02
-
-- name: "Allerton Conference on Communication, Control, and Computing"
-  abbreviation: "Allerton"
-  url: "https://allerton.csl.illinois.edu/"
-  topic: "Information Theory"
-  type: "conference"
-  description: >
-    Each year, the Allerton Conference draws some of the brightest minds from
-    industry, academia, and government to discuss innovation in the fields of
-    communication, control, and computing.
-  dates: !!seq
-    - [2023-09-26, 2023-09-29]
-    - [2024-09-25, 2024-09-27]
-    - [2025-09-17, 2025-09-19]
-    - [2026-09-15, 2026-09-18]
-  deadline:
-    - 2023-07-10
-    - 2024-07-21
-    - 2025-07-12
-    - 2026-06-15
+  deadline: []

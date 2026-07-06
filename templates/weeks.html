@@ -9,6 +9,7 @@
 			<ul>
 				<li><a href="index.html">Conference Dates</a></li>
 				<li><a href="deadlines.html">Submission Deadlines</a></li>
+				<li><a href="coverage.html">Date Coverage</a></li>
 			</ul>
 		</nav>
 
@@ -59,11 +60,12 @@
 				</thead>
 				<tbody>
 				{% for conference in conferences | sort(attribute='abbreviation') %}
-        {% set conf_deadline = conference.get("deadline", ["&mdash;"])[-1] %}
+				{% set conf_deadlines = conference.get("deadline", []) %}
+				{% set conf_deadline = conf_deadlines[-1] if conf_deadlines else "" %}
 				<tr id="{{ conference.abbreviation }}">
 					<td><a href="{{ conference.url }}">{{ conference.name }}</a></td>
 					<td>{{ conference.abbreviation }}</td>
-          <td {% if conf_deadline < today %}class="past-deadline"{% endif %}>{{ conf_deadline }}</td>
+					<td {% if conf_deadline and conf_deadline < today %}class="past-deadline"{% endif %}>{{ conf_deadline }}</td>
 				</tr>
 				{% endfor %}
 				</tbody>
@@ -83,4 +85,3 @@
 		</main>
 	</body>
 </html>
-

@@ -9,35 +9,14 @@
     on signal processing and its applications. It provides a fantastic
     networking opportunity for like-minded professionals from around the world.
   dates: !!seq
-    - [2023-06-04, 2023-06-10]
-    - [2024-04-14, 2024-04-19]
     - [2025-04-06, 2025-04-11]
     - [2026-05-03, 2026-05-08]
     - [2027-05-16, 2027-05-21]
     - [2028-05-28, 2028-06-02]
     - [2029-04-22, 2029-04-27]
   deadline:
-    - 2022-10-26
-    - 2023-09-06
-    - 2024-09-09
     - 2025-09-17
     - 2026-09-16
-
-- name: "IEEE International Workshop on Computational Advances in Multi-Sensor Adaptive Processing"
-  abbreviation: "CAMSAP"
-  url: "https://camsap25.ig.umons.ac.be"
-  organization: "spsoc"
-  topic: "Signal Processing"
-  type: "workshop"
-  description: >
-    CAMSAP workshop features a number of plenary talks from the world’s leading
-    researchers in the area, special focus sessions, and contributed papers.
-  dates: !!seq
-    - [2023-12-10, 2023-12-13]
-    - [2025-12-10, 2025-12-13]
-  deadline:
-    - 2023-07-29
-    - 2025-07-15
 
 - name: "IEEE Workshop on Machine Learning for Signal Processing"
   abbreviation: "MLSP"
@@ -50,56 +29,11 @@
     learning for signal processing through keynote talks, tutorials, as well as
     special and regular single-track sessions.
   dates: !!seq
-    - [2023-09-17, 2023-09-20]
-    - [2024-09-22, 2024-09-25]
     - [2025-08-31, 2025-09-03]
     - [2026-09-28, 2026-10-01]
   deadline:
-    - 2023-04-28
-    - 2024-05-14
     - 2025-05-06
     - 2026-06-12
-
-- name: "IEEE Workshop on Signal Processing Advances in Wireless Communications"
-  abbreviation: "SPAWC"
-  url: "https://2026.ieeespawc.org/"
-  organization: "spsoc"
-  topic: "Signal Processing"
-  type: "workshop"
-  description: >
-    SPAWC features the latest scientific results on wireless communication
-    systems and networks.
-  dates: !!seq
-    - [2023-09-25, 2023-09-28]
-    - [2024-09-10, 2024-09-13]
-    - [2025-07-07, 2025-07-10]
-    - [2026-09-06, 2025-09-09]
-  deadline:
-    - 2023-04-16
-    - 2024-04-26
-    - 2025-04-13
-    - 2026-04-05
-
-- name: "IEEE International Workshop on Information Forensics and Security"
-  abbreviation: "WIFS"
-  url: "https://wifs2026.utt.fr/"
-  organization: "spsoc"
-  topic: "Signal Processing"
-  type: "workshop"
-  description: >
-    WIFS brings together researchers from relevant disciplines to exchange new
-    ideas and the latest results and to discuss emerging challenges in
-    different areas of information security.
-  dates: !!seq
-    - [2023-12-04, 2023-12-07]
-    - [2024-12-02, 2024-12-05]
-    - [2025-12-01, 2025-12-04]
-    - [2026-12-07, 2026-12-11]
-  deadline:
-    - 2023-07-16
-    - 2024-07-15
-    - 2025-06-30
-    - 2026-07-15
 
 - name: "Asilomar Conference on Signals, Systems, and Computers"
   abbreviation: "Asilomar"
@@ -114,12 +48,8 @@
     for presenting recent and novel work in various areas of theoretical and
     applied signal processing.
   dates: !!seq
-    - [2023-10-29, 2023-11-01]
-    - [2024-10-27, 2024-10-30]
     - [2025-10-26, 2025-10-29]
     - [2026-10-25, 2026-10-28]
   deadline:
-    - 2023-05-01
-    - 2024-05-01
     - 2025-05-01
     - 2026-05-08

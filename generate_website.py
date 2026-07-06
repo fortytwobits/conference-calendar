@@ -54,6 +54,20 @@ def create_conference_table(conf_list: Iterable, year: int=date.today().year):
             deadline_data[deadline_week].append(conference)
     return week_data, deadline_data
 
+def create_coverage_rows(conf_list: Iterable, years: Iterable[int]):
+    coverage_rows = []
+    for conference in conf_list:
+        conference_years = set()
+        for _start_date, _end_date in conference.get("dates", []) or []:
+            conference_years.add(_start_date.year)
+        coverage_rows.append({
+            "name": conference.get("name", ""),
+            "abbreviation": conference.get("abbreviation", ""),
+            "url": conference.get("url", ""),
+            "coverage": {year: year in conference_years for year in years},
+        })
+    return coverage_rows
+
 def week_days_format(week: int, year=date.today().year, format="%b %d"):
     first_day = date.fromisocalendar(year, week, 1)
     last_day = date.fromisocalendar(year, week, 7)
@@ -69,6 +83,7 @@ def main():
     env.filters['weekdates'] = week_days_format
     #template = env.get_template("index.html")
     template = env.get_template("weeks.html")
+    coverage_template = env.get_template("coverage.html")
 
     today = date.today()
     now = datetime.now()
@@ -125,6 +140,16 @@ def main():
         out_path = os.path.join(DIR_PUBLIC, _html_file)
         with open(out_path, 'w') as html_file:
             html_file.write(content)
+
+    coverage_years = list(range(2025, 2029))
+    coverage_rows = create_coverage_rows(data, coverage_years)
+    content = coverage_template.render(coverage_rows=coverage_rows,
+                                       coverage_years=coverage_years,
+                                       title="Date Coverage",
+                                       timestamp=timestamp)
+    out_path = os.path.join(DIR_PUBLIC, "coverage.html")
+    with open(out_path, 'w') as html_file:
+        html_file.write(content)
 
 if __name__ == "__main__":
     results = main()

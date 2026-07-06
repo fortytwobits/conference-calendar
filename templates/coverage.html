@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Conference Calendar &ndash; {{ title }}</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html">Conference Dates</a></li>
+				<li><a href="deadlines.html">Submission Deadlines</a></li>
+				<li><a href="coverage.html">Date Coverage</a></li>
+			</ul>
+		</nav>
+
+		<main>
+		<h1>{{ title }}</h1>
+		<table>
+			<thead>
+			<tr>
+				<th>Conference</th>
+				<th>Abbreviation</th>
+				{% for year in coverage_years %}
+				<th>{{ year }}</th>
+				{% endfor %}
+			</tr>
+			</thead>
+			<tbody>
+			{% for row in coverage_rows | sort(attribute='abbreviation') %}
+			<tr>
+				<td>
+					{% if row.url %}
+					<a href="{{ row.url }}">{{ row.name }}</a>
+					{% else %}
+					{{ row.name }}
+					{% endif %}
+				</td>
+				<td>{{ row.abbreviation }}</td>
+				{% for year in coverage_years %}
+				{% if row.coverage[year] %}
+				<td class="coverage-updated">Updated</td>
+				{% else %}
+				<td class="coverage-missing">Missing</td>
+				{% endif %}
+				{% endfor %}
+			</tr>
+			{% endfor %}
+			</tbody>
+		</table>
+
+		<section>
+			<p>Latest update: {{ timestamp }} </p>
+		</section>
+		</main>
+	</body>
+</html>

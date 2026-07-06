@@ -118,6 +118,20 @@ div.past-week {
   color: #999;
 }
 
+.coverage-updated,
+.coverage-missing {
+	text-align: center;
+}
+
+.coverage-updated {
+	color: var(--color-accent);
+	font-weight: 700;
+}
+
+.coverage-missing {
+	color: #999;
+}
+
 ul.conflist {
 	list-style-type: none;
 	padding: 0;

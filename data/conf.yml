@@ -1,0 +1,447 @@
+- name: "IEEE"
+  abbreviation: "ICIP"
+  url: "https://2026.ieeeicip.org/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2026
+  location: ""
+  event_month: "September"
+  deadline_month: "February"
+  dates: []
+  deadline: []
+
+- name: "Picture Coding Symposium"
+  abbreviation: "PCS"
+  url: "https://2025.picturecodingsymposium.org/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2025
+  location: "Germany"
+  event_month: "December"
+  deadline_month: "July"
+  dates: []
+  deadline: []
+
+- name: "Summer School for Video Compression and Processing"
+  abbreviation: "SVCP"
+  url: "https://www.mt.hs-rm.de/svcp2026/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2026
+  location: "Germany"
+  event_month: "June"
+  deadline_month: "May"
+  dates: []
+  deadline: []
+
+- name: "IEEE"
+  abbreviation: "ICASSP"
+  url: "https://2026.ieeeicassp.org/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2026
+  location: ""
+  event_month: "June"
+  deadline_month: "March"
+  dates: []
+  deadline: []
+
+- name: "Visual Communications and Image Processing"
+  abbreviation: "VCIP"
+  url: "https://vcip-2026.org/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2026
+  location: "Singapore"
+  event_month: "December"
+  deadline_month: "June"
+  dates: []
+  deadline: []
+
+- name: "Data Compression Conference"
+  abbreviation: "DCC"
+  url: "https://datacompressionconference.org/important-dates/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: ""
+  location: "Utah"
+  event_month: "March"
+  deadline_month: "October"
+  dates: []
+  deadline: []
+
+- name: "IEEE Multimedia Signal Processing"
+  abbreviation: "MMSP"
+  url: "https://signalprocessingsociety.org/events/2026-ieee-international-workshop-multimedia-signal-processing-mmsp"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2026
+  location: "Istanbul"
+  event_month: "September"
+  deadline_month: "May"
+  dates: []
+  deadline: []
+
+- name: "IEEE"
+  abbreviation: "ICME"
+  url: "https://2026.ieeeicme.org/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2026
+  location: ""
+  event_month: "July"
+  deadline_month: "December"
+  dates: []
+  deadline: []
+
+- name: "Asilomar"
+  abbreviation: "Asilomar"
+  url: "https://www.asilomarsscconf.org/schedule.html"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: ""
+  location: "USA"
+  event_month: "October"
+  deadline_month: "April"
+  dates: []
+  deadline: []
+
+- name: "International Conference on Quality of Multimedia Experience"
+  abbreviation: "QoMEX"
+  url: "https://qomex.org/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: ""
+  location: ""
+  event_month: "June"
+  deadline_month: "February"
+  dates: []
+  deadline: []
+
+- name: "IEEE Workshop on Image, Video, and Multimedia Signal Processing"
+  abbreviation: "IVMSP"
+  url: "https://2026.ieeeivmsp.org/call-for-papers/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2026
+  location: "China"
+  event_month: "June"
+  deadline_month: "January"
+  dates: []
+  deadline: []
+
+- name: "IEEE Workshop on Machine Learning for Signal Processing"
+  abbreviation: "MLSP"
+  url: ""
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: ""
+  location: ""
+  event_month: "December"
+  deadline_month: "September"
+  dates: []
+  deadline: []
+
+- name: "IEEE Workshop on Statistical Signal Processing"
+  abbreviation: "SSP"
+  url: "https://2025.ieeessp.org/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2025
+  location: ""
+  event_month: "February"
+  deadline_month: "June"
+  dates: []
+  deadline: []
+
+- name: "IEEE Workshop on Signal Processing Systems"
+  abbreviation: "SiPS"
+  url: "https://www.multimediacomputing.org/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: ""
+  location: "France"
+  event_month: "December"
+  deadline_month: "August"
+  dates: []
+  deadline: []
+
+- name: "Mile High Video"
+  abbreviation: "MHV"
+  url: ""
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: ""
+  location: ""
+  event_month: "February"
+  deadline_month: ""
+  dates: []
+  deadline: []
+
+- name: "Image Video, and Communications"
+  abbreviation: "ISIVC"
+  url: "https://www.isivc.org/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: ""
+  location: "Morocco"
+  event_month: "May"
+  deadline_month: "February"
+  dates: []
+  deadline: []
+
+- name: "Colour and Visual Computing Symposium 2026"
+  abbreviation: "CVCS"
+  url: "https://www.cvcs.no/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2026
+  location: ""
+  event_month: "September"
+  deadline_month: "April"
+  dates: []
+  deadline: []
+
+- name: "IEEE Signal Processing and Image"
+  abbreviation: "ICSIPA"
+  url: "https://sps.ieeemy.org/icsipa2026/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2026
+  location: "Malaysia"
+  event_month: "September"
+  deadline_month: "April"
+  dates: []
+  deadline: []
+
+- name: "Intelligent Computer Communication Processing"
+  abbreviation: "ICCP"
+  url: "https://iccp.ro/iccp2026/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2026
+  location: ""
+  event_month: "October"
+  deadline_month: "July"
+  dates: []
+  deadline: []
+
+- name: "Information Technology"
+  abbreviation: "ISIITA"
+  url: "https://www.icispp.com/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: ""
+  location: "Philippines"
+  event_month: "June"
+  deadline_month: "January"
+  dates: []
+  deadline: []
+
+- name: "Signal Processing"
+  abbreviation: "SPA"
+  url: "https://spaconference.org.pl/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: ""
+  location: "Poland"
+  event_month: "September"
+  deadline_month: "May"
+  dates: []
+  deadline: []
+
+- name: "Intelligent Computing and Signal Processing"
+  abbreviation: "ICSP"
+  url: "https://www.ic-icsp.org/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: ""
+  location: "China"
+  event_month: "April"
+  deadline_month: "April"
+  dates: []
+  deadline: []
+
+- name: "Computer and Multimedia"
+  abbreviation: "ICCMT"
+  url: "https://www.ic-cmt.org/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: ""
+  location: "China"
+  event_month: "June"
+  deadline_month: "March"
+  dates: []
+  deadline: []
+
+- name: "Symposium Information Theory Applications"
+  abbreviation: "ISITA"
+  url: "https://isita.ieice.org/2026/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2026
+  location: "Japan"
+  event_month: "November"
+  deadline_month: "April"
+  dates: []
+  deadline: []
+
+- name: "European Signal Processing Conference"
+  abbreviation: "EUSIPCO"
+  url: "https://eusipco2026.org/timeline/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2026
+  location: "Bruges"
+  event_month: "August"
+  deadline_month: "February"
+  dates: []
+  deadline: []
+
+- name: "IEEE Information Theory Workshop (ITW)"
+  abbreviation: "ITSOC"
+  url: "https://www.itsoc.org/event/2027-ieee-information-theory-workshop-itw?trk=feed_main-feed-card_feed-article-content"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2027
+  location: "Munich"
+  event_month: "April"
+  deadline_month: "October"
+  dates: []
+  deadline: []
+
+- name: "International Conference on Electronics Circuits and Systems"
+  abbreviation: "ICECS"
+  url: "https://www.icecs2026.gr/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2026
+  location: "Greece"
+  event_month: "November"
+  deadline_month: "May"
+  dates: []
+  deadline: []
+
+- name: "Information Theory Workshop"
+  abbreviation: "ITW"
+  url: "2026.ieee-itw.org"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2026
+  location: "USA"
+  event_month: "November"
+  deadline_month: "May"
+  dates: []
+  deadline: []
+
+- name: "Signal Processing for Wireless"
+  abbreviation: "SPAWC"
+  url: "https://2026.ieeespawc.org/2026/03/16/paper-submission-deadline-extended-by-two-weeks/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2026
+  location: "Greece"
+  event_month: "September"
+  deadline_month: "March"
+  dates: []
+  deadline: []
+
+- name: "International Symposium on Image and Signal Processing and Analysis"
+  abbreviation: "ISPA"
+  url: "https://www.isispa.org/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: ""
+  location: "Portugal"
+  event_month: "October"
+  deadline_month: ""
+  dates: []
+  deadline: []
+
+- name: "Image Video Signal"
+  abbreviation: "IVSP"
+  url: "https://www.ivsp.net/"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: ""
+  location: "Japan"
+  event_month: "March"
+  deadline_month: "January"
+  dates: []
+  deadline: []
+
+- name: "IEEE International Symposium on Information Theory"
+  abbreviation: "ISIT"
+  url: "https://www.itsoc.org/event/2027-ieee-international-symposium-information-theory-isit"
+  organization: ""
+  topic: ""
+  type: ""
+  description: ""
+  year: 2027
+  location: "Italy"
+  event_month: "June"
+  deadline_month: "January"
+  dates: []
+  deadline: []
