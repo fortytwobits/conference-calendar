@@ -1,0 +1,392 @@
+- name: "Picture Coding Symposium"
+  abbreviation: "PCS"
+  url: "https://2025.picturecodingsymposium.org/"
+  organization: ""
+  topic: "Video Coding"
+  type: "conference"
+  description: ""
+  year: 2025
+  location: "Germany"
+  event_month: "December"
+  deadline_month: "July"
+  dates: []
+  deadline:
+    - 2025-07-01
+
+- name: "Summer School for Video Compression and Processing"
+  abbreviation: "SVCP"
+  url: "https://www.mt.hs-rm.de/svcp2026/"
+  organization: ""
+  topic: "Video Compression"
+  type: "summer school"
+  description: ""
+  year: 2026
+  location: "Cottbus, Germany"
+  event_month: "June"
+  deadline_month: "May"
+  dates: !!seq
+    - [2026-06-28, 2026-06-30]
+  deadline:
+    - 2026-05-03
+
+- name: "IEEE International Conference on Visual Communications and Image Processing"
+  abbreviation: "VCIP"
+  url: "https://vcip-2026.org/"
+  organization: ""
+  topic: "Visual Communications and Image Processing"
+  type: "conference"
+  description: >
+    VCIP is a forum for advances in visual communication, image processing, and
+    multimedia technologies.
+  year: 2026
+  location: "Singapore"
+  event_month: "December"
+  deadline_month: "June"
+  dates: !!seq
+    - [2026-12-13, 2026-12-16]
+  deadline:
+    - 2026-07-03
+
+- name: "Data Compression Conference"
+  abbreviation: "DCC"
+  url: "https://datacompressionconference.org/important-dates/"
+  organization: ""
+  topic: "Data Compression"
+  type: "conference"
+  description: ""
+  year: 2027
+  location: "Utah"
+  event_month: "March"
+  deadline_month: "October"
+  dates: !!seq
+    - [2027-03-23, 2027-03-26]
+  deadline:
+    - 2026-10-02
+
+- name: "IEEE International Conference on Multimedia and Expo"
+  abbreviation: "ICME"
+  url: "https://2026.ieeeicme.org/"
+  organization: "spsoc"
+  topic: "Multimedia"
+  type: "conference"
+  description: >
+    ICME is an IEEE flagship multimedia conference sponsored by the IEEE
+    Circuits and Systems Society, Communications Society, Computer Society, and
+    Signal Processing Society.
+  year: 2026
+  location: ""
+  event_month: "July"
+  deadline_month: "December"
+  proposal_url: "https://signalprocessingsociety.org/events/call-proposals-ieee-icme-2027"
+  proposal_deadline: 2025-05-15
+  dates: []
+  deadline:
+    - 2025-12-01
+
+- name: "IEEE International Conference on Multimedia and Expo"
+  abbreviation: "ICME"
+  url: "https://ieee-cas.org/event/conference/2027-ieee-international-conference-multimedia-expo-icme"
+  organization: "spsoc"
+  topic: "Multimedia"
+  type: "conference"
+  description: >
+    ICME is an IEEE flagship multimedia conference sponsored by the IEEE
+    Circuits and Systems Society, Communications Society, Computer Society, and
+    Signal Processing Society.
+  year: 2027
+  location: "Xiamen, China"
+  event_month: "July"
+  deadline_month: ""
+  dates: []
+  deadline: []
+
+- name: "ACM International Conference on Multimedia"
+  abbreviation: "ACM MM"
+  url: "https://2026.acmmm.org/"
+  organization: "acm"
+  topic: "Multimedia"
+  type: "conference"
+  description: >
+    ACM Multimedia is an international conference dedicated to research and
+    applications across multimedia fields.
+  year: 2026
+  location: "Rio de Janeiro, Brazil"
+  event_month: "November"
+  deadline_month: "April"
+  dates: !!seq
+    - [2026-11-10, 2026-11-14]
+  deadline:
+    - 2026-04-01
+
+- name: "ACM Multimedia Asia"
+  abbreviation: "MMAsia"
+  url: "https://www.mmasia2026.org/important-dates"
+  organization: "acm"
+  topic: "Multimedia"
+  type: "conference"
+  description: >
+    ACM Multimedia Asia is a regional ACM multimedia conference covering
+    multimedia research, systems, applications, and emerging AI-native
+    multimedia technologies.
+  year: 2026
+  location: "VinUniversity, Hanoi, Vietnam"
+  event_month: "December"
+  deadline_month: "August"
+  dates: !!seq
+    - [2026-12-15, 2026-12-18]
+  deadline:
+    - 2026-08-03
+
+- name: "ACM Multimedia Systems Conference"
+  abbreviation: "MMSys"
+  url: "https://2027.acmmmsys.org/research-track.html"
+  organization: "acm"
+  topic: "Multimedia Systems"
+  type: "conference"
+  description: >
+    ACM MMSys is an interdisciplinary conference on multimedia systems,
+    spanning networking, operating systems, distributed computing, computer
+    vision, and artificial intelligence.
+  year: 2027
+  location: "Ghent, Belgium"
+  event_month: "March"
+  deadline_month: "September"
+  dates: !!seq
+    - [2027-03-30, 2027-04-02]
+  deadline:
+    - 2026-09-17
+
+- name: "SIGGRAPH"
+  abbreviation: "SIGGRAPH"
+  url: "https://s2026.siggraph.org/"
+  organization: "acm"
+  topic: "Computer Graphics and Interactive Techniques"
+  type: "conference"
+  description: >
+    SIGGRAPH is ACM SIGGRAPH's annual conference and exhibition on computer
+    graphics and interactive techniques.
+  year: 2026
+  location: "Los Angeles, CA, USA"
+  event_month: "July"
+  deadline_month: ""
+  dates: !!seq
+    - [2026-07-19, 2026-07-23]
+  deadline: []
+
+- name: "SIGGRAPH"
+  abbreviation: "SIGGRAPH"
+  url: "https://s2027.siggraph.org/"
+  organization: "acm"
+  topic: "Computer Graphics and Interactive Techniques"
+  type: "conference"
+  description: >
+    SIGGRAPH is ACM SIGGRAPH's annual conference and exhibition on computer
+    graphics and interactive techniques.
+  year: 2027
+  location: "Anaheim, CA, USA"
+  event_month: "August"
+  deadline_month: ""
+  dates: !!seq
+    - [2027-08-08, 2027-08-12]
+  deadline: []
+
+- name: "IEEE Workshop on Signal Processing Systems"
+  abbreviation: "SiPS"
+  url: "https://www.multimediacomputing.org/"
+  organization: ""
+  topic: "Signal Processing Systems"
+  type: "workshop"
+  description: ""
+  year: ""
+  location: "France"
+  event_month: "December"
+  deadline_month: "August"
+  dates: []
+  deadline: []
+
+- name: "Mile High Video"
+  abbreviation: "MHV"
+  url: "https://www.mile-high.video/"
+  organization: "acm"
+  topic: "Video Coding and Streaming"
+  type: "conference"
+  description: >
+    ACM Mile-High Video is a flagship video coding and streaming event for
+    practicing engineers and researchers in media compression and streaming.
+  year: 2026
+  location: "Denver, CO, USA"
+  event_month: "February"
+  deadline_month: "December"
+  dates: !!seq
+    - [2026-02-02, 2026-02-05]
+  deadline:
+    - 2025-12-15
+
+- name: "Mile High Video"
+  abbreviation: "MHV"
+  url: "https://www.mile-high.video/"
+  organization: "acm"
+  topic: "Video Coding and Streaming"
+  type: "conference"
+  description: >
+    ACM Mile-High Video is a flagship video coding and streaming event for
+    practicing engineers and researchers in media compression and streaming.
+  year: 2027
+  location: "Denver Botanic Gardens, Denver, CO, USA"
+  event_month: "February"
+  deadline_month: "October"
+  dates: !!seq
+    - [2027-02-22, 2027-02-25]
+  deadline:
+    - 2026-10-23
+
+- name: "Demuxed"
+  abbreviation: "Demuxed"
+  url: "https://2025.demuxed.com/"
+  organization: ""
+  topic: "Video Engineering"
+  type: "conference"
+  description: >
+    Demuxed is a conference and community for video developers and engineers.
+  year: 2025
+  location: "London, UK"
+  event_month: "October"
+  deadline_month: ""
+  dates: !!seq
+    - [2025-10-29, 2025-10-30]
+  deadline: []
+
+- name: "International Workshop on Advanced Image Technology"
+  abbreviation: "IWAIT"
+  url: "https://iwait.online/"
+  organization: ""
+  topic: "Image and Video Technology"
+  type: "workshop"
+  description: >
+    IWAIT is a long-running annual Asia-Pacific workshop on image, video, and
+    multimedia technology, including image/video compression. Extended
+    abstract (1 page) for review; English full papers (4-6 pages, SPIE format)
+    for camera-ready. Organized by KIBME; camera-ready due 2026-11-15.
+  year: 2027
+  location: "Ewha Womans University, Seoul, Korea"
+  event_month: "January"
+  deadline_month: "September"
+  dates: !!seq
+    - [2027-01-10, 2027-01-12]
+  deadline:
+    - 2026-09-10
+
+- name: "APSIPA Annual Summit and Conference"
+  abbreviation: "APSIPA ASC"
+  url: "https://www.apsipa2026.org/"
+  organization: ""
+  topic: "Signal and Information Processing"
+  type: "conference"
+  description: >
+    APSIPA ASC covers signal and information processing including image and
+    video coding. Accepted papers are archived in IEEE Xplore and indexed in
+    EI Compendex. Paper deadline per APSIPA newsletter; verify on the
+    conference site.
+  year: 2026
+  location: "Bangkok, Thailand"
+  event_month: "November"
+  deadline_month: "June"
+  dates: !!seq
+    - [2026-11-09, 2026-11-12]
+  deadline:
+    - 2026-06-30
+
+- name: "Beyond VVC Call for Proposals"
+  abbreviation: "Beyond VVC"
+  url: "https://www.itu.int/hub/2026/07/beyond-vvc-call-for-proposals-on-future-video-coding/"
+  organization: ""
+  topic: "Video Coding"
+  type: "standardization"
+  description: >
+    ITU-T/ISO/IEC JVET call for proposals on future video coding beyond VVC.
+    Registration closed 2026-09-01; proposals are evaluated at the 45th JVET
+    meeting in January 2027. Proposal submission deadline not confirmed; see
+    the CfP document.
+  year: 2027
+  location: ""
+  event_month: "January"
+  deadline_month: "September"
+  dates: []
+  deadline:
+    - 2026-09-01
+
+- name: "International Conference on Multimedia Modeling"
+  abbreviation: "MMM"
+  url: "https://mmm2027.net/"
+  organization: ""
+  topic: "Multimedia"
+  type: "conference"
+  description: >
+    MMM 2027 is the 33rd International Conference on Multimedia Modeling.
+    Notification 2026-10-16, camera-ready 2026-11-01. Demo deadline was
+    2026-09-07.
+  year: 2027
+  location: "Siem Reap, Cambodia"
+  event_month: "January"
+  deadline_month: "August"
+  dates: !!seq
+    - [2027-01-05, 2027-01-08]
+  deadline:
+    - 2026-08-16
+
+- name: "International Technical Conference on Circuits/Systems, Computers and Communications"
+  abbreviation: "ITC-CSCC"
+  url: "https://itc-cscc2026.ecti-thailand.org/"
+  organization: ""
+  topic: "Circuits, Systems, Computers and Communications"
+  type: "conference"
+  description: >
+    ITC-CSCC is powered by IEIE, IEICE and ECTI and is not IEEE-sponsored.
+    Dates are tentative (from an older project page); venue not confirmed.
+    Final extended deadline was 2026-03-31, regular-track deadline 2026-03-01.
+  year: 2026
+  location: "Bangkok, Thailand"
+  event_month: "July"
+  deadline_month: "March"
+  dates: !!seq
+    - [2026-07-07, 2026-07-10]
+  deadline:
+    - 2026-03-01
+
+- name: "International Symposium on Intelligent Signal Processing and Communication Systems"
+  abbreviation: "ISPACS"
+  url: "https://stei.itb.ac.id/ispacs2025/"
+  organization: ""
+  topic: "Signal Processing and Communications"
+  type: "conference"
+  description: >
+    Asia-Pacific symposium with IEEE chapter sponsorship; proceedings
+    published by IEEE. No 2026 edition announced yet, so this is the 2025
+    edition.
+  year: 2025
+  location: "Bandung, Indonesia"
+  event_month: "November"
+  deadline_month: "September"
+  dates: !!seq
+    - [2025-11-04, 2025-11-07]
+  deadline:
+    - 2025-09-20
+
+- name: "IIEEJ International Conference on Image Electronics and Visual Computing"
+  abbreviation: "IEVC"
+  url: "https://easychair.org/smart-slide/conference/9VX1"
+  organization: ""
+  topic: "Image Electronics and Visual Computing"
+  type: "conference"
+  description: >
+    9th IEVC, organized by the Institute of Image Electronics Engineers of
+    Japan with IEEE technical sponsorship; proceedings published by IEEE.
+    Sources disagree on dates (March 10-13 vs 16-19, 2026); the exact dates and
+    the official URL (the link is the IEVC2024 EasyChair page) and the
+    submission deadline are unverified.
+  year: 2026
+  location: "Hiroshima, Japan"
+  event_month: "March"
+  deadline_month: ""
+  dates: []
+  deadline: []

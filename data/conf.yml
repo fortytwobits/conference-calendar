@@ -1,20 +1,3 @@
-- name: "IEEE International Conference on Image Processing"
-  abbreviation: "ICIP"
-  url: "https://2026.ieeeicip.org/"
-  organization: "spsoc"
-  topic: "Image Processing"
-  type: "flagship"
-  description: >
-    ICIP is the IEEE flagship event on image processing, vision, and imaging.
-  year: 2026
-  location: "Tampere, Finland"
-  event_month: "September"
-  deadline_month: "February"
-  dates: !!seq
-    - [2026-09-13, 2026-09-17]
-  deadline:
-    - 2026-02-04
-
 - name: "International Conference on Video, Signal and Image Processing"
   abbreviation: "VSIP"
   url: "https://www.vsip.net/file/VSIP2026-Flyer-EV.pdf"
@@ -68,6 +51,24 @@
     - [2026-04-24, 2026-04-26]
   deadline:
     - 2026-02-08
+
+- name: "International Conference on Digital Image Processing and Computer Applications"
+  abbreviation: "DIPCA"
+  url: "https://www.icipca.net/"
+  organization: ""
+  topic: "Digital Image Processing and Computer Applications"
+  type: "conference"
+  description: >
+    DIPCA provides a forum for research in digital image processing and
+    computer applications.
+  year: 2027
+  location: "Urumqi, China"
+  event_month: "March"
+  deadline_month: "January"
+  dates: !!seq
+    - [2027-03-26, 2027-03-28]
+  deadline:
+    - 2027-01-10
 
 - name: "International Conference on Image and Video Processing"
   abbreviation: "ICIVP"
@@ -231,162 +232,6 @@
   deadline:
     - 2026-02-28
 
-- name: "Picture Coding Symposium"
-  abbreviation: "PCS"
-  url: "https://2025.picturecodingsymposium.org/"
-  organization: ""
-  topic: "Video Coding"
-  type: "conference"
-  description: ""
-  year: 2025
-  location: "Germany"
-  event_month: "December"
-  deadline_month: "July"
-  dates: []
-  deadline:
-    - 2025-07-01
-
-- name: "Summer School for Video Compression and Processing"
-  abbreviation: "SVCP"
-  url: "https://www.mt.hs-rm.de/svcp2026/"
-  organization: ""
-  topic: "Video Compression"
-  type: "summer school"
-  description: ""
-  year: 2026
-  location: "Germany"
-  event_month: "June"
-  deadline_month: "May"
-  dates: []
-  deadline:
-    - 2026-05-01
-
-- name: "IEEE International Conference on Visual Communications and Image Processing"
-  abbreviation: "VCIP"
-  url: "https://vcip-2026.org/"
-  organization: ""
-  topic: "Visual Communications and Image Processing"
-  type: "conference"
-  description: >
-    VCIP is a forum for advances in visual communication, image processing, and
-    multimedia technologies.
-  year: 2026
-  location: "Singapore"
-  event_month: "December"
-  deadline_month: "June"
-  dates: !!seq
-    - [2026-12-13, 2026-12-16]
-  deadline:
-    - 2026-07-03
-
-- name: "Data Compression Conference"
-  abbreviation: "DCC"
-  url: "https://datacompressionconference.org/important-dates/"
-  organization: ""
-  topic: "Data Compression"
-  type: "conference"
-  description: ""
-  year: 2027
-  location: "Utah"
-  event_month: "March"
-  deadline_month: "October"
-  dates: !!seq
-    - [2027-03-23, 2027-03-26]
-  deadline:
-    - 2026-10-02
-
-- name: "IEEE International Workshop on Multimedia Signal Processing"
-  abbreviation: "MMSP"
-  url: "https://signalprocessingsociety.org/events/2026-ieee-international-workshop-multimedia-signal-processing-mmsp"
-  organization: "spsoc"
-  topic: "Multimedia Signal Processing"
-  type: "workshop"
-  description: ""
-  year: 2026
-  location: "Istanbul, Turkey"
-  event_month: "September"
-  deadline_month: "May"
-  dates: !!seq
-    - [2026-09-22, 2026-09-24]
-  deadline:
-    - 2026-05-29
-
-- name: "IEEE International Conference on Multimedia and Expo"
-  abbreviation: "ICME"
-  url: "https://2026.ieeeicme.org/"
-  organization: "spsoc"
-  topic: "Multimedia"
-  type: "conference"
-  description: >
-    ICME is an IEEE flagship multimedia conference sponsored by the IEEE
-    Circuits and Systems Society, Communications Society, Computer Society, and
-    Signal Processing Society.
-  year: 2026
-  location: ""
-  event_month: "July"
-  deadline_month: "December"
-  proposal_url: "https://signalprocessingsociety.org/events/call-proposals-ieee-icme-2027"
-  proposal_deadline: 2025-05-15
-  dates: []
-  deadline:
-    - 2025-12-01
-
-- name: "ACM International Conference on Multimedia"
-  abbreviation: "ACM MM"
-  url: "https://2026.acmmm.org/"
-  organization: "acm"
-  topic: "Multimedia"
-  type: "conference"
-  description: >
-    ACM Multimedia is an international conference dedicated to research and
-    applications across multimedia fields.
-  year: 2026
-  location: "Rio de Janeiro, Brazil"
-  event_month: "November"
-  deadline_month: "April"
-  dates: !!seq
-    - [2026-11-10, 2026-11-14]
-  deadline:
-    - 2026-04-01
-
-- name: "ACM Multimedia Asia"
-  abbreviation: "MMAsia"
-  url: "https://www.mmasia2026.org/important-dates"
-  organization: "acm"
-  topic: "Multimedia"
-  type: "conference"
-  description: >
-    ACM Multimedia Asia is a regional ACM multimedia conference covering
-    multimedia research, systems, applications, and emerging AI-native
-    multimedia technologies.
-  year: 2026
-  location: "VinUniversity, Hanoi, Vietnam"
-  event_month: "December"
-  deadline_month: "August"
-  dates: !!seq
-    - [2026-12-15, 2026-12-18]
-  deadline:
-    - 2026-08-03
-
-- name: "ACM Multimedia Systems Conference"
-  abbreviation: "MMSys"
-  url: "https://2027.acmmmsys.org/research-track.html"
-  organization: "acm"
-  topic: "Multimedia Systems"
-  type: "conference"
-  description: >
-    ACM MMSys is an interdisciplinary conference on multimedia systems,
-    spanning networking, operating systems, distributed computing, computer
-    vision, and artificial intelligence.
-  year: 2027
-  location: "Ghent, Belgium"
-  event_month: "March"
-  deadline_month: "September"
-  dates: !!seq
-    - [2027-03-30, 2027-04-02]
-  deadline:
-    - 2026-09-17
-
 - name: "International Conference on Quality of Multimedia Experience"
   abbreviation: "QoMEX"
   url: "https://qomex.org/"
@@ -405,23 +250,21 @@
   deadline:
     - 2026-02-27
 
-- name: "IEEE Image, Video, and Multidimensional Signal Processing Workshop"
-  abbreviation: "IVMSP"
-  url: "https://2026.ieeeivmsp.org/"
-  organization: "spsoc"
-  topic: "Image, Video, and Multidimensional Signal Processing"
-  type: "workshop"
+- name: "International Conference on Quality of Multimedia Experience"
+  abbreviation: "QoMEX"
+  url: "https://qomex.org/"
+  organization: ""
+  topic: "Quality of Multimedia Experience"
+  type: "conference"
   description: >
-    IVMSP brings together researchers from academia and industry to explore
-    advances in image, video, and multidimensional signal processing.
-  year: 2026
-  location: "Shenzhen, China"
-  event_month: "June"
-  deadline_month: "February"
-  dates: !!seq
-    - [2026-06-16, 2026-06-19]
-  deadline:
-    - 2026-02-11
+    QoMEX brings together researchers and practitioners working on multimedia
+    quality, Quality of Experience, and User Experience.
+  year: 2027
+  location: "Shanghai, China"
+  event_month: ""
+  deadline_month: ""
+  dates: []
+  deadline: []
 
 - name: "IEEE Workshop on Statistical Signal Processing"
   abbreviation: "SSP"
@@ -441,37 +284,23 @@
   deadline:
     - 2025-02-23
 
-- name: "IEEE Workshop on Signal Processing Systems"
-  abbreviation: "SiPS"
-  url: "https://www.multimediacomputing.org/"
-  organization: ""
-  topic: "Signal Processing Systems"
+- name: "IEEE Workshop on Statistical Signal Processing"
+  abbreviation: "SSP"
+  url: "https://ssp27.ieeesps.org/"
+  organization: "spsoc"
+  topic: "Statistical Signal Processing"
   type: "workshop"
-  description: ""
-  year: ""
-  location: "France"
-  event_month: "December"
-  deadline_month: "August"
-  dates: []
-  deadline: []
-
-- name: "Mile High Video"
-  abbreviation: "MHV"
-  url: "https://www.mile-high.video/"
-  organization: "acm"
-  topic: "Video Coding and Streaming"
-  type: "conference"
   description: >
-    ACM Mile-High Video is a flagship video coding and streaming event for
-    practicing engineers and researchers in media compression and streaming.
-  year: 2026
-  location: "Denver, CO, USA"
-  event_month: "February"
-  deadline_month: "December"
+    SSP is an international workshop on statistical signal processing and its
+    applications.
+  year: 2027
+  location: "Annecy, France"
+  event_month: "June"
+  deadline_month: "February"
   dates: !!seq
-    - [2026-02-02, 2026-02-05]
+    - [2027-06-28, 2027-07-01]
   deadline:
-    - 2025-12-15
+    - 2027-02-07
 
 - name: "Image Video, and Communications"
   abbreviation: "ISIVC"
@@ -509,24 +338,6 @@
   deadline:
     - 2026-05-05
 
-- name: "IEEE International Conference on Signal and Image Processing Applications"
-  abbreviation: "ICSIPA"
-  url: "https://sps.ieeemy.org/icsipa2026/"
-  organization: "spsoc"
-  topic: "Signal and Image Processing"
-  type: "conference"
-  description: >
-    ICSIPA provides a forum for advances in signal, image, and video
-    processing applications.
-  year: 2026
-  location: "Melaka, Malaysia"
-  event_month: "September"
-  deadline_month: "April"
-  dates: !!seq
-    - [2026-09-08, 2026-09-10]
-  deadline:
-    - 2026-06-30
-
 - name: "IEEE International Conference on Intelligent Computer Communication and Processing"
   abbreviation: "ICCP"
   url: "https://iccp.ro/iccp2026/"
@@ -563,6 +374,24 @@
   deadline:
     - 2026-02-11
 
+- name: "International Conference on Image, Signal Processing and Pattern Recognition"
+  abbreviation: "ISPP"
+  url: "https://www.icispp.com/"
+  organization: ""
+  topic: "Image, Signal Processing, and Pattern Recognition"
+  type: "conference"
+  description: >
+    ISPP provides a forum for image, signal processing, and pattern recognition
+    research.
+  year: 2027
+  location: "Haikou, China"
+  event_month: "April"
+  deadline_month: "January"
+  dates: !!seq
+    - [2027-04-16, 2027-04-18]
+  deadline:
+    - 2027-01-28
+
 - name: "Signal Processing: Algorithms, Architectures, Arrangements, and Applications"
   abbreviation: "SPA"
   url: "https://spaconference.org.pl/"
@@ -595,6 +424,40 @@
   deadline:
     - 2026-04-10
 
+- name: "International Conference on Intelligent Computing and Signal Processing"
+  abbreviation: "ICSP"
+  url: "https://www.ic-icsp.org/"
+  organization: ""
+  topic: "Intelligent Computing and Signal Processing"
+  type: "conference"
+  description: ""
+  year: 2027
+  location: "Chongqing, China"
+  event_month: "March"
+  deadline_month: "January"
+  dates: !!seq
+    - [2027-03-26, 2027-03-28]
+  deadline:
+    - 2027-01-10
+
+- name: "IEEE International Conference on Signal Processing"
+  abbreviation: "ICSP"
+  url: "http://www.icsp-ieee.org/page.asp?id=147"
+  organization: "ieee"
+  topic: "Signal Processing"
+  type: "conference"
+  description: >
+    The 18th IEEE International Conference on Signal Processing, bringing together
+    researchers and practitioners in signal processing and related applications.
+  year: 2026
+  location: "Guiyang, China"
+  event_month: "October"
+  deadline_month: "July"
+  dates: !!seq
+    - [2026-10-23, 2026-10-25]
+  deadline:
+    - 2026-07-15
+
 - name: "International Conference on Computer and Multimedia Technology"
   abbreviation: "ICCMT"
   url: "https://www.ic-cmt.org/"
@@ -610,6 +473,22 @@
     - [2026-06-05, 2026-06-07]
   deadline:
     - 2026-05-22
+
+- name: "International Conference on Computer and Multimedia Technology"
+  abbreviation: "ICCMT"
+  url: "https://www.ic-cmt.org/"
+  organization: ""
+  topic: "Computer and Multimedia Technology"
+  type: "conference"
+  description: ""
+  year: 2027
+  location: "Shanghai, China"
+  event_month: "July"
+  deadline_month: "April"
+  dates: !!seq
+    - [2027-07-23, 2027-07-25]
+  deadline:
+    - 2027-04-23
 
 - name: "International Symposium on Information Theory and Its Applications"
   abbreviation: "ISITA"
@@ -692,3 +571,112 @@
     - [2027-03-03, 2027-03-05]
   deadline:
     - 2026-09-20
+
+- name: "IEEE 15th Image, Video, and Multidimensional Signal Processing Workshop"
+  abbreviation: "IVMSP"
+  url: "https://2026.ieeeivmsp.org/"
+  organization: "ieee"
+  topic: "Image, Video, and Multidimensional Signal Processing"
+  type: "workshop"
+  description: >
+    IVMSP brings together leading researchers from academia and industry to explore
+    the latest breakthroughs in image, video, and multidimensional signal processing
+    with focus on Image and Video for Multimodality AI.
+  year: 2026
+  location: "Tsinghua Shenzhen International Graduate School, Shenzhen, China"
+  event_month: "June"
+  deadline_month: "February"
+  dates: !!seq
+    - [2026-06-16, 2026-06-19]
+  deadline:
+    - 2026-02-11
+
+- name: "IEEE International Conference on Image Processing"
+  abbreviation: "ICIP"
+  url: "https://2027.ieeeicip.org/"
+  organization: "ieee"
+  topic: "Image Processing"
+  type: "conference"
+  description: >
+    ICIP is the IEEE International Conference on Image Processing, a premier
+    forum for the presentation and discussion of advances in image processing,
+    signal processing, and related applications.
+  year: 2027
+  location: "Singapore"
+  event_month: "November"
+  deadline_month: ""
+  dates: !!seq
+    - [2027-11-29, 2027-12-03]
+  deadline: []
+
+- name: "IEEE 28th International Workshop on Multimedia Signal Processing"
+  abbreviation: "MMSP"
+  url: "https://attend.ieee.org/mmsp-2026/"
+  organization: "ieee"
+  topic: "Multimedia Signal Processing"
+  type: "workshop"
+  description: >
+    MMSP is the IEEE International Workshop on Multimedia Signal Processing,
+    welcoming papers on AI-generated media, generative models, multimedia ethics
+    and security, immersive systems, and applications in healthcare, education, and the arts.
+  year: 2026
+  location: "Istanbul, Türkiye"
+  event_month: "September"
+  deadline_month: "May"
+  dates: !!seq
+    - [2026-09-22, 2026-09-24]
+  deadline:
+    - 2026-05-29
+
+- name: "IEEE International Workshop on Multimedia Signal Processing"
+  abbreviation: "MMSP"
+  url: "https://signalprocessingsociety.org/events/2027-ieee-international-workshop-multimedia-signal-processing-mmsp"
+  organization: "ieee"
+  topic: "Multimedia Signal Processing"
+  type: "workshop"
+  description: >
+    MMSP is the IEEE International Workshop on Multimedia Signal Processing,
+    bringing together researchers working on multimedia signal processing and related applications.
+  year: 2027
+  location: "Klagenfurt, Austria"
+  event_month: "October"
+  deadline_month: ""
+  dates: !!seq
+    - [2027-10-06, 2027-10-08]
+  deadline: []
+
+- name: "AAAI Conference on Artificial Intelligence"
+  abbreviation: "AAAI"
+  url: "https://aaai.org/conference/aaai/aaai-27/"
+  organization: "aaai"
+  topic: "Artificial Intelligence"
+  type: "conference"
+  description: >
+    AAAI is the Association for the Advancement of Artificial Intelligence's
+    annual conference on artificial intelligence research and applications.
+  year: 2027
+  location: "Montréal, Canada"
+  event_month: "February"
+  deadline_month: "July"
+  dates: !!seq
+    - [2027-02-16, 2027-02-23]
+  deadline:
+    - 2026-07-28
+
+- name: "Picture Coding Symposium"
+  abbreviation: "PCS"
+  url: "https://warwick.ac.uk/fac/sci/dcs/pcs2027/"
+  organization: "warwick"
+  topic: "Image and Video Coding"
+  type: "conference"
+  description: >
+    PCS is an international forum on advances in visual data coding and image/video
+    compression, including learned, model-based, and standard-driven approaches.
+  year: 2027
+  location: "Mexico City, Mexico"
+  event_month: "June"
+  deadline_month: "January"
+  dates: !!seq
+    - [2027-06-07, 2027-06-10]
+  deadline:
+    - 2027-01-26

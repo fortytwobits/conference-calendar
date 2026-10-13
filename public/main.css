@@ -7,6 +7,7 @@
 	--color-bg-dark: #f0f0f0;
 	--color-fg: #222;
 	--color-accent: #393;
+	--color-source-highlight: #c71585;
 }
 
 body {
@@ -58,6 +59,20 @@ tbody tr:nth-child(odd){
 }
 tbody tr:hover {
 	background-color: var(--color-bg-dark);
+}
+
+tbody tr.source-highlight,
+tbody tr.source-highlight:nth-child(odd) {
+	background-color: var(--color-source-highlight);
+	color: #fff;
+}
+
+tbody tr.source-highlight:hover {
+	background-color: #a91273;
+}
+
+tbody tr.source-highlight a {
+	color: #fff;
 }
 
 nav ul {
@@ -164,6 +179,15 @@ ul.legend-list li {
 }
 .topic-vehicular-technology {
 	background-color: #ffbb5c;
+}
+
+.source-highlight {
+	background-color: var(--color-source-highlight);
+	color: #fff;
+}
+
+.source-highlight a {
+	color: #fff;
 }
 
 .flagship {

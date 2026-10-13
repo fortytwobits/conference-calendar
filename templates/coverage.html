@@ -16,15 +16,14 @@
 		<main>
 		<h1>{{ title }}</h1>
 
-		{% macro coverage_table(rows, include_deadline=False) %}
+		{% macro coverage_table(rows, deadline_heading) %}
 		<table>
 			<thead>
 			<tr>
 				<th>Conference</th>
 				<th>Abbreviation</th>
-				{% if include_deadline %}
-				<th>Next Deadline</th>
-				{% endif %}
+				<th>{{ deadline_heading }}</th>
+				<th>Conference Date</th>
 				{% for year in coverage_years %}
 				<th>{{ year }}</th>
 				{% endfor %}
@@ -32,7 +31,7 @@
 			</thead>
 			<tbody>
 			{% for row in rows %}
-			<tr>
+			<tr{% if row.source_highlight %} class="source-highlight"{% endif %}>
 				<td>
 					{% if row.url %}
 					<a href="{{ row.url }}" target="_blank" rel="noopener noreferrer">{{ row.name }}</a>
@@ -41,9 +40,8 @@
 					{% endif %}
 				</td>
 				<td>{{ row.abbreviation }}</td>
-				{% if include_deadline %}
-				<td>{{ row.next_deadline }}</td>
-				{% endif %}
+				<td>{{ row.display_deadline }}</td>
+				<td>{{ row.conference_start_date }}</td>
 				{% for year in coverage_years %}
 				{% if row.coverage[year] %}
 				<td class="coverage-updated">Updated</td>
@@ -59,12 +57,12 @@
 
 		<section>
 			<h1>Future Submission Deadlines</h1>
-			{{ coverage_table(future_deadline_rows | sort(attribute='next_deadline'), include_deadline=True) }}
+			{{ coverage_table(future_deadline_rows, "Next Deadline") }}
 		</section>
 
 		<section>
-			<h1>Other Conferences</h1>
-			{{ coverage_table(other_coverage_rows | sort(attribute='abbreviation')) }}
+			<h1>Past Conferences</h1>
+			{{ coverage_table(other_coverage_rows, "Last Deadline") }}
 		</section>
 
 		<section>

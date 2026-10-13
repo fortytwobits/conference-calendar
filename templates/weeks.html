@@ -30,7 +30,7 @@
 					<ul class="conflist">
 					{% for conference in week_data[week] | sort(attribute='abbreviation') %}
 					{% set topic = conference.topic | lower | replace(" ", "-") %}
-					<li class="{{ 'topic-' ~ topic }} {{ conference.type }}"><a href="#{{ conference.abbreviation }}" target="_blank" rel="noopener noreferrer">{{ conference.abbreviation }}</a></li>
+					<li class="{{ 'topic-' ~ topic }} {{ conference.type }}{% if conference.source_highlight %} source-highlight{% endif %}"><a href="#{{ conference.abbreviation }}" target="_blank" rel="noopener noreferrer">{{ conference.abbreviation }}</a></li>
 					{% endfor %}
 					</ul>
 				</div>
@@ -50,6 +50,14 @@
 			{% endfor %}
 			</ul>
 			#}
+			<p>
+				<label for="year-select">Year:</label>
+				<select id="year-select">
+					{% for y in list_years %}
+					<option value="{{ y }}"{% if y == today.year %} selected{% endif %}>{{ y }}</option>
+					{% endfor %}
+				</select>
+			</p>
 			<table>
 				<thead>
 				<tr>
@@ -62,7 +70,7 @@
 				{% for conference in conferences | sort(attribute='abbreviation') %}
 				{% set conf_deadlines = conference.get("deadline", []) %}
 				{% set conf_deadline = conf_deadlines[-1] if conf_deadlines else "" %}
-				<tr id="{{ conference.abbreviation }}">
+				<tr id="{{ conference.abbreviation }}" data-years="{{ conference.years | join(',') }}"{% if conference.source_highlight %} class="source-highlight"{% endif %}>
 					<td><a href="{{ conference.url }}" target="_blank" rel="noopener noreferrer">{{ conference.name }}</a></td>
 					<td>{{ conference.abbreviation }}</td>
 					<td {% if conf_deadline and conf_deadline < today %}class="past-deadline"{% endif %}>{{ conf_deadline }}</td>
@@ -79,6 +87,7 @@
 				<li class="topic-signal-processing">Signal Processing</li>
 				<li class="topic-information-theory">Information Theory</li>
 				<li class="topic-vehicular-technology">Vehicular Technology</li>
+				<li class="source-highlight">EURASIP / ITSOC / SPSOC / Media</li>
 			</ul>
 		</section>
 		<section>
@@ -91,5 +100,19 @@
 			<p>Latest update: {{ timestamp }} </p>
 		</section>
 		</main>
+		<script>
+			(function () {
+				var select = document.getElementById("year-select");
+				var rows = document.querySelectorAll("#conferences tbody tr");
+				function apply() {
+					rows.forEach(function (row) {
+						var years = row.dataset.years.split(",");
+						row.hidden = years.indexOf(select.value) === -1;
+					});
+				}
+				select.addEventListener("change", apply);
+				apply();
+			})();
+		</script>
 	</body>
 </html>

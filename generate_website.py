@@ -13,6 +13,12 @@ from constants import (DIR_TEMPLATES, DIR_PUBLIC, DIR_DATA,
                       )
 
 FORMATTER_DATE = lambda x: date.strftime(x, "%B %d, %Y")
+HIGHLIGHT_SOURCE_FILES = {
+    "eurasip.yml",
+    "itsoc.yml",
+    "spsoc.yml",
+    "media.yml",
+}
 
 def load_data():
     yml_files = [x for x in os.listdir(DIR_DATA) if x.endswith(".yml")]
@@ -21,7 +27,15 @@ def load_data():
         print(_file)
         _file_path = os.path.join(DIR_DATA, _file)
         with open(_file_path, 'r') as yml_file:
-            data.extend(yaml.safe_load(yml_file))
+            conferences = yaml.safe_load(yml_file) or []
+            for conference in conferences:
+                conference["source_file"] = _file
+                conference["source_highlight"] = _file in HIGHLIGHT_SOURCE_FILES
+                years = {d[0].year for d in conference.get("dates") or []}
+                if not years and isinstance(conference.get("year"), int):
+                    years = {conference["year"]}
+                conference["years"] = sorted(years)
+            data.extend(conferences)
     return data
 
 def create_conference_table(conf_list: Iterable, year: int=date.today().year):
@@ -59,17 +73,32 @@ def create_coverage_rows(conf_list: Iterable, years: Iterable[int],
     coverage_rows = []
     for conference in conf_list:
         conference_years = set()
+        start_dates = []
         for _start_date, _end_date in conference.get("dates", []) or []:
+            start_dates.append(_start_date)
             conference_years.add(_start_date.year)
         deadlines = conference.get("deadline", []) or []
         future_deadlines = [deadline for deadline in deadlines if deadline >= today]
+        future_start_dates = [start_date for start_date in start_dates
+                              if start_date >= today]
+        next_deadline = min(future_deadlines) if future_deadlines else ""
+        last_deadline = max(deadlines) if deadlines else ""
+        conference_start_date = ""
+        if future_start_dates:
+            conference_start_date = min(future_start_dates)
+        elif start_dates:
+            conference_start_date = max(start_dates)
         coverage_rows.append({
             "name": conference.get("name", ""),
             "abbreviation": conference.get("abbreviation", ""),
             "url": conference.get("url", ""),
+            "source_highlight": conference.get("source_highlight", False),
             "coverage": {year: year in conference_years for year in years},
             "has_future_deadline": bool(future_deadlines),
-            "next_deadline": min(future_deadlines) if future_deadlines else "",
+            "next_deadline": next_deadline,
+            "last_deadline": last_deadline,
+            "display_deadline": next_deadline or last_deadline,
+            "conference_start_date": conference_start_date,
         })
     return coverage_rows
 
@@ -138,6 +167,7 @@ def main():
                 ]
     for _title, _html_file, _data in datasets:
         content = template.render(conferences=data,
+                                  list_years=sorted({y for c in data for y in c["years"]}),
                                   conf_data=_data,
                                   title=_title,
                                   timestamp=timestamp,
@@ -154,6 +184,8 @@ def main():
     other_coverage_rows = [
         row for row in coverage_rows if not row["has_future_deadline"]
     ]
+    future_deadline_rows.sort(key=lambda row: row["next_deadline"])
+    other_coverage_rows.sort(key=lambda row: row["last_deadline"] or date.max)
     content = coverage_template.render(coverage_rows=coverage_rows,
                                        future_deadline_rows=future_deadline_rows,
                                        other_coverage_rows=other_coverage_rows,
