@@ -31,7 +31,7 @@
 			</thead>
 			<tbody>
 			{% for row in rows %}
-			<tr{% if row.source_highlight %} class="source-highlight"{% endif %}>
+			<tr{% if row.relevance %} class="relevance-{{ row.relevance }}"{% endif %}>
 				<td>
 					{% if row.url %}
 					<a href="{{ row.url }}" target="_blank" rel="noopener noreferrer">{{ row.name }}</a>

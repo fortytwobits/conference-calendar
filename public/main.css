@@ -7,7 +7,8 @@
 	--color-bg-dark: #f0f0f0;
 	--color-fg: #222;
 	--color-accent: #393;
-	--color-source-highlight: #c71585;
+	--color-relevance-high: #c71585;
+	--color-relevance-medium: #f2d024;
 }
 
 body {
@@ -61,18 +62,24 @@ tbody tr:hover {
 	background-color: var(--color-bg-dark);
 }
 
-tbody tr.source-highlight,
-tbody tr.source-highlight:nth-child(odd) {
-	background-color: var(--color-source-highlight);
+tbody tr.relevance-high,
+tbody tr.relevance-high:nth-child(odd) {
+	background-color: var(--color-relevance-high);
 	color: #fff;
 }
-
-tbody tr.source-highlight:hover {
+tbody tr.relevance-high:hover {
 	background-color: #a91273;
 }
-
-tbody tr.source-highlight a {
+tbody tr.relevance-high a {
 	color: #fff;
+}
+
+tbody tr.relevance-medium,
+tbody tr.relevance-medium:nth-child(odd) {
+	background-color: var(--color-relevance-medium);
+}
+tbody tr.relevance-medium:hover {
+	background-color: #d9ba15;
 }
 
 nav ul {
@@ -181,13 +188,15 @@ ul.legend-list li {
 	background-color: #ffbb5c;
 }
 
-.source-highlight {
-	background-color: var(--color-source-highlight);
+.relevance-high {
+	background-color: var(--color-relevance-high);
 	color: #fff;
 }
-
-.source-highlight a {
+.relevance-high a {
 	color: #fff;
+}
+.relevance-medium {
+	background-color: var(--color-relevance-medium);
 }
 
 .flagship {

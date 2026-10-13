@@ -24,7 +24,7 @@ def load_data():
             conferences = yaml.safe_load(yml_file) or []
             for conference in conferences:
                 conference["source_file"] = _file
-                conference["source_highlight"] = bool(conference.get("source_highlight", False))
+                conference["relevance"] = conference.get("relevance", "")
                 years = {d[0].year for d in conference.get("dates") or []}
                 if not years and isinstance(conference.get("year"), int):
                     years = {conference["year"]}
@@ -86,7 +86,7 @@ def create_coverage_rows(conf_list: Iterable, years: Iterable[int],
             "name": conference.get("name", ""),
             "abbreviation": conference.get("abbreviation", ""),
             "url": conference.get("url", ""),
-            "source_highlight": conference.get("source_highlight", False),
+            "relevance": conference.get("relevance", ""),
             "coverage": {year: year in conference_years for year in years},
             "has_future_deadline": bool(future_deadlines),
             "next_deadline": next_deadline,

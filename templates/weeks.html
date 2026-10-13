@@ -30,7 +30,7 @@
 					<ul class="conflist">
 					{% for conference in week_data[week] | sort(attribute='abbreviation') %}
 					{% set topic = conference.topic | lower | replace(" ", "-") %}
-					<li class="{{ 'topic-' ~ topic }} {{ conference.type }}{% if conference.source_highlight %} source-highlight{% endif %}"><a href="#{{ conference.abbreviation }}" target="_blank" rel="noopener noreferrer">{{ conference.abbreviation }}</a></li>
+					<li class="{{ 'topic-' ~ topic }} {{ conference.type }}{% if conference.relevance %} relevance-{{ conference.relevance }}{% endif %}"><a href="#{{ conference.abbreviation }}" target="_blank" rel="noopener noreferrer">{{ conference.abbreviation }}</a></li>
 					{% endfor %}
 					</ul>
 				</div>
@@ -70,7 +70,7 @@
 				{% for conference in conferences | sort(attribute='abbreviation') %}
 				{% set conf_deadlines = conference.get("deadline", []) %}
 				{% set conf_deadline = conf_deadlines[-1] if conf_deadlines else "" %}
-				<tr id="{{ conference.abbreviation }}" data-years="{{ conference.years | join(',') }}"{% if conference.source_highlight %} class="source-highlight"{% endif %}>
+				<tr id="{{ conference.abbreviation }}" data-years="{{ conference.years | join(',') }}"{% if conference.relevance %} class="relevance-{{ conference.relevance }}"{% endif %}>
 					<td><a href="{{ conference.url }}" target="_blank" rel="noopener noreferrer">{{ conference.name }}</a></td>
 					<td>{{ conference.abbreviation }}</td>
 					<td {% if conf_deadline and conf_deadline < today %}class="past-deadline"{% endif %}>{{ conf_deadline }}</td>
@@ -87,7 +87,8 @@
 				<li class="topic-signal-processing">Signal Processing</li>
 				<li class="topic-information-theory">Information Theory</li>
 				<li class="topic-vehicular-technology">Vehicular Technology</li>
-				<li class="source-highlight">EURASIP / ITSOC / SPSOC / Media</li>
+				<li class="relevance-high">Very relevant</li>
+				<li class="relevance-medium">Somewhat relevant</li>
 			</ul>
 		</section>
 		<section>
