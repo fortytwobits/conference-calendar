@@ -13,12 +13,6 @@ from constants import (DIR_TEMPLATES, DIR_PUBLIC, DIR_DATA,
                       )
 
 FORMATTER_DATE = lambda x: date.strftime(x, "%B %d, %Y")
-HIGHLIGHT_SOURCE_FILES = {
-    "eurasip.yml",
-    "itsoc.yml",
-    "spsoc.yml",
-    "media.yml",
-}
 
 def load_data():
     yml_files = [x for x in os.listdir(DIR_DATA) if x.endswith(".yml")]
@@ -30,7 +24,7 @@ def load_data():
             conferences = yaml.safe_load(yml_file) or []
             for conference in conferences:
                 conference["source_file"] = _file
-                conference["source_highlight"] = _file in HIGHLIGHT_SOURCE_FILES
+                conference["source_highlight"] = bool(conference.get("source_highlight", False))
                 years = {d[0].year for d in conference.get("dates") or []}
                 if not years and isinstance(conference.get("year"), int):
                     years = {conference["year"]}
